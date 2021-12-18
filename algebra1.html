@@ -1,0 +1,534 @@
+<html>
+<head>
+
+	<title>
+		алгебра многочлены/одночлены
+	</title>
+
+	<style>
+		body {
+			background: url('https://oir.mobi/uploads/posts/2021-03/thumbs/1616973580_4-p-fon-profilya-4.jpg') no-repeat fixed;
+			background-size: 100%;
+			margin-left: 50px;
+		} 
+		p {
+			color: black;
+		}
+		.block-text {
+			margin:0 auto;
+			width:1000px;
+		}
+		.werty{
+			background: url('https://s-media-cache-ak0.pinimg.com/736x/b0/40/23/b04023c521026f3a58cad3f7bbeb4da7.jpg');
+			margin:0 auto;
+			background-color: white;
+			width:1200px;
+		}
+		.home-button {
+			position: fixed; /* Фиксированное положение */
+			right: 20px; /* Расстояние от правого края окна браузера */
+			top: 20px; /* Расстояние сверху */
+			padding: 10px; /* Поля вокруг текста */ 
+			background: #d0e28f; /* Цвет фона */ 
+			border: 3px solid #72b8ac; /* Параметры рамки */ 
+			cursor: pointer;
+			border-radius: 20px 10px;
+		}
+		.ramka {
+    	border: 3px solid green;
+    	padding: 0 10px;
+   		}
+	</style>
+
+	<script>
+	function check()
+	{
+		var result = 0;
+
+		var questAnswer1 = document.getElementById('questAnswer1');
+		var questAnswer2 = document.getElementById('questAnswer2');
+		var questAnswer3 = document.getElementById('questAnswer3');
+		var questAnswer4 = document.getElementById('questAnswer4');
+		var questAnswer5 = document.getElementById('questAnswer5');
+		var questAnswer6 = document.getElementById('questAnswer6');
+		var questAnswer7 = document.getElementById('questAnswer7');
+		var questAnswer8 = document.getElementById('questAnswer8');
+		var questAnswer9 = document.getElementById('questAnswer9');
+		var questAnswer10 = document.getElementById('questAnswer10');
+
+		if (questAnswer1.checked) {
+			result++;
+		}
+
+		if (questAnswer2.checked) {
+			result++;
+		}
+
+		if (questAnswer3.checked) {
+			result++;
+		}
+
+		if (questAnswer4.checked) {
+			result++;
+		}
+
+		if (questAnswer5.checked) {
+			result++;
+		}
+
+		if (questAnswer6.checked) {
+			result++;
+		}
+
+		if (questAnswer7.checked) {
+			result++;
+		}
+
+		if (questAnswer8.checked) {
+			result++;
+		}
+
+		if (questAnswer9.checked) {
+			result++;
+		}
+
+		if (questAnswer10.checked) {
+			result++;
+		}
+
+
+		var resultTag = document.getElementById('result');
+		resultTag.innerHTML = "Результат: " + result + "/10";
+		resultTag.removeAttribute('hidden');
+    }
+</script>
+
+</head>
+
+<body>
+	<div class="home-button" onclick="location.href='#';">Вернуться</div>
+	<div class="werty">
+		<div id="header">
+			<h2 align="center">тема одночлен/многочлен по алгебре</h2>
+		</div>
+		<div id="spisok">
+			<ul class="nav">
+				<li><a href="#pon">основные понятия</a></li>
+				<li><a href="#obr">как образуется многочлен</a></li>
+				<li><a href="#ptivet">как привести к стандартному виду</a></li>
+				<li><a href="#varaz">выражения с одночленами и много членами</a></li>
+				<li><a href="#zacrep">закрепим знания</a></li>
+			</ul>
+		</div>
+		<div id="pon" class="block-text">
+			<h1 style="text-align:center">основные понятия</h1>
+			<img src="https://myalfaschool.ru/common/upload/ckeditor/140-7da7a67fd21a77b2578ae8b39d9d565a.png" alt="картинка не загрузилась :(">
+			<p>Числа в одночлене могут быть натуральными, целыми, рациональными, обыкновенными дробями, смешанными числами и  десятичными дробями, с ними мы познакомились в прошлых наших статьях. Давайте приведем наглядный пример: 5,10,−9,−&frac15;, также любая переменная−a,c,b,g,q  будут одночленами. Число или переменная в степени 2&sup5;,x&sup2;,b&frac18; также является одночленом. Однако наиболее используемые одночлены в математике −9a,5x,3(−6)xz&sup3;,3axy. Числа всегда должны стоять впереди переменных, это будет наиболее математически верно. Теперь мы можем сформулировать еще одно понятие одночлена:</p>
+			<img src="https://myalfaschool.ru/common/upload/ckeditor/58-4da95ec3bb13ffd4fb37373fd121218c.png" alt="картинка не загрузилась :(">
+			<p>Одночленами не могут быть такие выражения как   a+ax,a/b+1 согласно определению выше.
+				Привести к стандартному виду одночлен, значит поставить числовой множитель на первое место, а переменные в алфавитном порядке. Примеры стандартного одночлена: 8a⋅b&sup2;⋅c⋅z&sup3;, &frac13;a&sup2;⋅b⋅x⋅z, где 8 и &frac13; числовые коэффициенты.
+			</p>
+			<img src="https://myalfaschool.ru/common/upload/ckeditor/71-e42b34fca678cb747843525922ae06a0.png" alt="картинка не загрузилась :(">
+			<p>Рассмотрим коэффициенты одночленов, равные 1 и −1. Их обычно не записывают перед переменными, хотя они там присутствуют. Если у одночлена нет числового коэффициента, тогда он равен единице. Одночлены xz, ax имеют коэффициент 1.</p>
+			<p>Многочлен — это сумма одночленов.
+			</p>
+		</div>
+		<div id="obr" class="block-text">
+			<h1 style="text-align:center">как образуется многочлен</h1>
+			<p>
+				<div class="ramka">
+					<h1>!Запомните!</h1> 
+					<h2>Многочленом называется алгебраическая сумма нескольких одночленов.</h2>
+					Обратите внимание, что «внутри» одночлена (между буквами и числовым коэффициентом) есть только знак умножения. Например, в одночлене: 3ab = 3 · a · b
+					<h2>Одночлены, из которых составлен многочлен, называют членами многочлена.</h2>
+				</p>
+			</div>	
+				<p>Например, выражение 2x + 4xy&sup2; + x + 2xy&sup2; является многочленом. Проще говоря, многочлен это несколько одночленов, соединенных знаком «плюс».
+				В некоторых многочленах одночлены могут соединяться знаком «минус». Например, 3x − 5y − 2x. Следует иметь ввиду, что это по-прежнему сумма одночленов. Многочлен 3x − 5y − 2x это сумма одночленов 3x, −5y и − 2x, то есть 3x + (−5y) + (−2x). После раскрытия скобок образуется многочлен  3x − 5y − 2x.
+
+				<h2>3x + (−5y) + (−2x) = 3x − 5y − 2x</h2>
+
+				Соответственно, рассматривая по отдельности каждый одночлен многочлена, его нужно рассматривать вместе со знаком, который перед ним располагается. Так, в многочлене 3x − 5y − 2x минус перед одночленом 5y относится к коэффициенту 5, а минус перед одночленом 2x относится к коэффициенту 2. Чтобы не противоречить определению многочлена, вычитание можно заменять сложением:
+
+				<h2>3x − 5y − 2x = 3x + (−5y) + (−2x)</h2>
+
+				Напримересложноо это действие нагромождает многочлен скобками, поэтому вычитание на сложение не заменяют, учитывая в будущем, что каждый одночлен многочлена будет рассматриваться вместе со знаком, который перед ним располагается.</p>
+				Примеры многочленов: a + 2b&sup2; − c;  3t&sup5; − 4b;   4 − 6xy
+				<p>Несложно заметить, что любой многочлен состоит из нескольких одночленов.
+				Рассмотрим многочлен подробнее.</p>
+			<img src="https://math-prosto.ru/images/polynomials/example_of_polynomial.png" alt="картинка не загрузилась :(">
+		</div>
+	<div id="ptivet" class="block-text">
+		<h1 style="text-align:center">стандартный вид и как привести к стандартному виду</h1>
+		<p>Рассмотрим пример. Привести к стандартному виду многочлен:
+
+			3ab + 2 · 3с&sup2; + 2ab − 8сс + xy =
+			Вначале приведём к стандартному виду все одночлены внутри многочлена.
+			3ab + 2 · 3с&sup2; + 2ab − 8сс + xy = 3ab + 6с&sup2; + 2ab − 8 с1 + 1 + xy =
+			= 3ab + 6с&sup2; + 2ab − 8с&sup2; + xy
+			Приведение подобных в многочлене
+			Теперь приведём подобные. Подобные члены подчеркнем одинаковым образом и разместим их друг за другом.
+			Помните, что при приведении одночленов складываются и вычитаются только их числовые коэффициенты.
+			3ab + 6с&sup2; + 2ab − 8с&sup2; + xy = 3ab + 2ab − 8с&sup2; + 6с&sup2; + xy = 5ab −2c&sup2; + xy
+			Запишем окончательное решение.
+			ab + 2 · 3с&sup2; + 2ab − 8сс + xy = 3ab + 6с&sup2; + 2ab − 8 с&sup2; + xy =
+			= 3ab + 6с&sup2; + 2ab − 8с&sup2; + xy = 3ab + 2ab − 8с&sup2; + 6с&sup2; + xy = 5ab −2c&sup2; + xy
+		При раскрытии скобок не забывайте использовать правило знаков. При перемещении одночлена знак слева переносится вместе с ним.</p>
+		<img src="https://math-prosto.ru/images/polynomials/example_of_polynomial.png" alt="картинка не загрузилась :(">
+		<h2>Примеры приведения многочлена к стандартному виду</h2>
+		<ul>
+			<li>
+				<h3>5a − 7b − (7a − 5b) = 5a − 7b − 7a + 5b = 5a − 7a − 7b + 5b = −2a − 2b<h3>
+			</li>
+			<li>
+				<h3>11a2 + 7a + 9a&sup2; −5a = 11a&sup2; + 7a + 9a&sup2; − 5a = 11a&sup2; + 9a&sup2; + 7a − 5a = 20a&sup2; + 2a</h3>
+			</li>
+			<li>
+				<h3>13ab − 0,2xy − 2a · 5b + 6x · 0,2y + a(−3)b = 13ab − 0,2xy − 10ab + 1,2xy + (−3ab) = 13ab − 10ab − 3ab − 0,2xy + 1,2xy = 0 · ab + 1 · xy = 0 + xy = xy</h3> 
+			</li>
+			</ul>
+	</div>
+	<div id="varaz" class="block-text">
+			<h1 style="text-align:center">выражения с одночленами и многочленами</h1>
+			<p></p>
+			<img src="https://math-prosto.ru/images/polynomials/example_of_polynomial.png" alt="картинка не загрузилась :(">
+			Из многочлена можно вычесть другой многочлен. Например, вычтем из многочлена 2x + y многочлен 3x + y.
+
+			Заключим в скобки каждый многочлен и соединим их знаком «минус», указывая тем самым, что мы выполняем вычитание:
+			(2x + y) − (3x + y)
+			Теперь раскроем скобки:
+			x + y − 3x − y
+			Приведём подобные слагаемые. Слагаемые y и −y являются противоположными. Сумма противоположных слагаемых равна нулю
+			y + (−y) = 0
+			Приводя подобные слагаемые, мы обычно складываем их. Но в качестве знака операции можно использовать знак одночлена. Так, приводя подобные слагаемые y и −y мы сложили их по правилу приведения подобных слагаемых. Но можно не складывая, записать их друг за другом
+			y − y
+			Получится тот же результат, поскольку выражения y + (−y) и y − y одинаково равны нулю:
+			y − y = 0
+			Возвращаемся к нашему примеру. Вычеркнем члены y и −y:
+			А сложение подобных слагаемых 2x и −3x, даст в результате −x
+			2x + (−3x) = −x
+			Или без сложения, записав члены друг за другом:
+			2x − 3x = −x
+			Значит, при вычитании из многочлена (2x + y) многочлена (3x + y) получится одночлен −x.
+			Решим этот же пример в столбик:
+			<img src="http://spacemath.xyz/wp-content/uploads/2019/04/sm-ris-4.png" alt="картинка не загрузилась :(">
+		</div>
+	<div id="zacrep" class="block-text">
+			<h1 style="text-align:center">закрепим знания</h1>
+			
+			<div class="quizsection">
+
+				<h2>Вопрос #1</h2>
+				<h2>что такое одночлен?</h2>
+
+				<div class="answer">
+					<input name="q1" value="value" id="questAnswer1" type="radio" /> это сумма выражений.
+				</div>
+
+				<div class="answer">
+					<input name="q1" value="value" type="radio" /> это сумма одночленов.
+				</div>
+
+				<div class="answer">
+					<input name="q1" value="value" type="radio" /> это алгебраическое выражение, состоящее из произведения числового множителя (коэффициента) на одну или нескольких переменных, взятых каждая в натуральной степени.также считается отдельное число (без буквенных множителей), степень такого одночлена равняется нулю.
+				</div>
+
+				<div class="answer">
+					<input name="q1" value="value" type="radio" /> это сумма степеней всех входящих в многочлен переменных.
+				</div>
+
+				<div class="answer">
+					<input name="q1" value="value" type="radio" /> это шоколадный тортик.
+				</div>
+
+				<div class="answer">
+					<input name="q1" value="value" type="radio" /> сумма каких-то вычитаний.
+				</div>
+
+			</div>
+
+			<div class="quizsection">
+
+				<h2>Вопрос #2</h2>
+				<h2>(2x + y) + (3x + y)=?</h2>
+
+				<div class="answer">
+					<input name="q2" value="value1" type="radio" /> 5+2
+				</div>
+
+				<div class="answer">
+					<input name="q2" value="value2" type="radio" /> 2y-5x
+				</div>
+
+				<div class="answer">
+					<input name="q2" value="value1" type="radio" /> 2yx+5
+				</div>
+
+				<div class="answer">
+					<input name="q2" value="value1" id="questAnswer2" type="radio" /> 5x + 2y
+				</div>
+
+				<div class="answer">
+					<input name="q2" value="value1" id="value5" type="radio" /> 5x-2y
+				</div>
+
+				<div class="answer">
+					<input name="q2" value="value1" id="value6" type="radio" /> 5y+2x
+				</div>
+			</div>
+
+
+			<div class="quizsection">
+
+				<h2>Вопрос #3</h2>
+				<h2>(2x2 + y3 + z + 2)+(5x2 + 2y3)=?</h2>
+
+				<div class="answer">
+					<input name="q3" value="value1" type="radio" />  7 + 3 + 2
+				</div>
+
+				<div class="answer">
+					<input name="q3" value="value1" type="radio" /> 7x - z
+				</div>
+
+				<div class="answer">
+					<input name="q3" value="value2" type="radio" />  7x&sup2; - 3y&sup3; - z - 2
+				</div>
+
+				<div class="answer">
+					<input name="q3" value="value1" type="radio" /> 7x + 3y + z + 3
+				</div>
+
+				<div class="answer">
+					<input name="q3" value="value1" type="radio" /> хлеб с маслом
+				</div>
+
+				<div class="answer">
+					<input name="q3" value="value1" id="questAnswer3" type="radio" />  7x&sup2; + 3y&sup3; + z + 2
+				</div>
+			</div>
+
+			<div class="quizsection">
+
+				<h2>Вопрос #4</h2>
+				<h2>(2x + y) − (3x + y)=?</h2>
+
+				<div class="answer">
+					<input name="q4" value="value1" type="radio" /> 2x
+				</div>
+
+				<div class="answer">
+					<input name="q4" value="value2" id="questAnswer4" type="radio" /> −x
+				</div>
+
+				<div class="answer">
+					<input name="q4" value="value1" type="radio" /> x
+				</div>
+
+				<div class="answer">
+					<input name="q4" value="value1" type="radio" /> -2x
+				</div>
+
+				<div class="answer">
+					<input name="q4" value="value1" type="radio" /> −x&sup3;
+				</div>
+
+				<div class="answer">
+					<input name="q4" value="value1" type="radio" /> −5x
+			</div>
+
+			<div class="quizsection">
+
+				<h2>Вопрос #5</h2>
+				<h2>(7x&sup3; + y + z&sup2;) + (x&sup3; − z&sup2;)=?</h2>
+
+				<div class="answer">
+					<input name="q5" value="value1" id="questAnswer5" type="radio" /> 8x&sup3; + y
+				</div>
+
+				<div class="answer">
+					<input name="q5" value="value2" type="radio" /> 8x&sup3; - y
+				</div>
+
+				<div class="answer">
+					<input name="q5" value="value1" type="radio" /> 8y&sup3; + x
+				</div>
+
+				<div class="answer">
+					<input name="q5" value="value1" type="radio" /> 8x&sup6; + y
+
+				<div class="answer">
+					<input name="q5" value="value1" type="radio" /> 8&sup3; + y
+				</div>
+
+				<div class="answer">
+					<input name="q5" value="value1" type="radio" /> 9x&sup3; + y
+				</div>
+			</div>
+
+
+			<div class="quizsection">
+				<h2>Вопрос #6</h2>
+				<h2>(13x − 11y + 10z) − (−15x + 10y − 15z) =?</h2>
+
+				<div class="answer">
+					<input name="q6" value="value1" id="questAnswer6" type="radio" /> 28x - 21y + 25z
+				</div>
+
+				<div class="answer">
+					<input name="q6" value="value2" type="radio" /> 21x + 28y - 25z
+				</div>
+
+				<div class="answer">
+					<input name="q6" value="value1" type="radio" /> 28x - 21 + 25z
+				</div>
+
+				<div class="answer">
+					<input name="q6" value="value1" type="radio" /> 28 - 21 + 25
+				</div>
+
+				<div class="answer">
+					<input name="q6" value="value1" type="radio" /> 21x - 28y + 25z
+				</div>
+
+				<div class="answer">
+					<input name="q6" value="value1" type="radio" /> 28x + 21y - 25z
+			</div>
+
+
+			<div class="quizsection">
+				<h2>Вопрос #7</h2>
+				<h2>представьте в виде суммы двух многочленов: 3x + 5y + z + 7</h2>
+
+				<div class="answer">
+					<input name="q7" value="value1" type="radio" /> (8x + 5y) − (−1 − 7)
+				</div>
+
+				<div class="answer">
+					<input name="q7" value="value2" type="radio" /> (8x + 4y) − (−x − 2)
+				</div>
+
+				<div class="answer">
+					<input name="q7" value="value1" type="radio" /> (3x + 5y) + (−z − 7)
+				</div>
+
+				<div class="answer">
+					<input name="q7" value="value1"id="questAnswer7" type="radio" /> (3x + 5y) − (−z − 7)
+				</div>
+
+				<div class="answer">
+					<input name="q7" value="value1" type="radio" /> (3 + 5y) − (z − 7)
+				</div>
+
+				<div class="answer">
+					<input name="q7" value="value1" type="radio" /> (3x - 5y) − (−z + 7)
+				</div>
+			</div>
+
+
+			<div class="quizsection">
+				<h2>Вопрос #8</h2>
+				<h2>Приведите многочлен 2x + 4xy&sup2; + x − xy&sup2; к стандартному виду.</h2>
+
+				<div class="answer">
+					<input name="q8" value="value1" type="radio" /> 3x - 3xy&sup2;
+				</div>
+
+				<div class="answer">
+					<input name="q8" value="value2" type="radio" /> 3x + 3xy&sup3;
+				</div>
+
+				<div class="answer">
+					<input name="q8" value="value1" id="questAnswer8" type="radio" /> 3x + 3xy&sup2;
+				</div>
+
+				<div class="answer">
+					<input name="q8" value="value1" type="radio" /> 6x + 3xy&sup3;
+				</div>
+
+				<div class="answer">
+					<input name="q8" value="value1" type="radio" /> 6x - 3xy&sup2;
+				</div>
+
+				<div class="answer">
+					<input name="q8" value="value1" type="radio" /> 3x + 6xy&sup2;
+				</div>
+			</div>
+
+			<div class="quizsection">
+				<h2>Вопрос #9</h2>
+				<h2>что такое многочлен?</h2>
+
+				<div class="answer">
+					<input name="q9" value="value1" type="radio" /> произведение одночленов
+				</div>
+
+				<div class="answer">
+					<input name="q9" value="value2" type="radio" /> частное одночленов
+				</div>
+
+				<div class="answer">
+					<input name="q9" value="value1" type="radio" /> утроинный одночлен
+				</div>
+
+				<div class="answer">
+					<input name="q9" value="value1" type="radio" /> разность одночленов
+				</div>
+
+				<div class="answer">
+					<input name="q9" value="value1" id="questAnswer9" type="radio" /> сумма одночленов
+				</div>
+
+				<div class="answer">
+					<input name="q9" value="value1" type="radio" /> одночлен
+				</div>
+			</div>
+
+
+			<div class="quizsection">
+				<h2>Вопрос #10</h2>
+				<h2>Привести многочлен 4x&sup2; − 4y − x&sup2; + 17y − y к стандартному виду.</h2>
+
+				<div class="answer">
+					<input name="q10" value="value1" type="radio" /> 3y&sup2; + 12x
+				</div>
+
+				<div class="answer">
+					<input name="q10" value="value2" type="radio" /> 3x&sup2; - 12y
+				</div>
+
+				<div class="answer">
+					<input name="q10" value="value1" id="questAnswer10" type="radio" /> 3x&sup2; + 12y
+				</div>
+
+				<div class="answer">
+					<input name="q10" value="value1" type="radio" /> 3y&sup3; + 12x
+				</div>
+
+				<div class="answer">
+					<input name="q10" value="value1" type="radio" /> 3x&sup2; - (-12y)
+				</div>
+
+				<div class="answer">
+					<input name="q10" value="value1" type="radio" /> 3x&sup2; + (-12y)
+				</div>
+
+			</div>
+
+			<input value="Submit" style="margin: 20px 0;font-size: 20px" onclick="check()" type="submit" /> 
+
+			<h2 id="result" hidden>Результат:</h2>
+
+		</div>		
+		<div class="ramka">
+	<p> я надеюсь вам понравился этот сайт, а сайт был создан ученицей 7 "В" класса Пронской Маргаритой.</p>
+</div>
+
+</body>
+
+
+
+
+
+
+</html>
